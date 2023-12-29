@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUMBER=$190
+NUMBER=$1
 if [ $NUMBER -gt 100 ]
 then
 echo "Given $NUMBER is greater than 100"
