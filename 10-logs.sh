@@ -7,9 +7,9 @@ G="\e[32m"
 y="\e[33m"
 N="\e[0m"
 
-LOGFILE="/temp/$0-TIMESTAMP.log"
+LOGFILE="/temp/$0-$TIMESTAMP.log"
 
-
+echo "script started executing at $TIMESTAMP" &>>$LOGFILE
 VALIDATE()
 {
 if [ $? -ne 0 ]
@@ -22,7 +22,7 @@ fi
 }
 if [ $ID -ne 0 ]
 then
-echo "ERROR:: Please run this script with root access"
+echo -e "ERROR:: Please run this script with root access"
 exit 1 # you can give other than 0
 else
 echo "you are root user"
