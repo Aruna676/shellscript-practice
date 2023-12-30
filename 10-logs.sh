@@ -17,7 +17,7 @@ then
 echo "ERROR:: $2 ...FAILED"
 exit 1 
 else
-echo "$2 ...  $G SUCCESS $N"
+echo "$2 ... SUCCESS"
 fi 
 }
 if [ $ID -ne 0 ]
