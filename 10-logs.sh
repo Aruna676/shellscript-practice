@@ -7,7 +7,7 @@ G="\e[32m"
 y="\e[33m"
 N=\e[0m"
 
-LOGFILE="/temp/$0-$R TIMESTAMP.log"
+LOGFILE="/temp/$0-$R TIMESTAMP.log $N"
 
 
 VALIDATE()
@@ -17,7 +17,7 @@ then
 echo "ERROR:: $2 ...$R FAILED $N"
 exit 1 
 else
-echo "$2 ...  $G SUCCESS$N"
+echo "$2 ...  $G SUCCESS $N"
 fi 
 }
 if [ $ID -ne 0 ]
