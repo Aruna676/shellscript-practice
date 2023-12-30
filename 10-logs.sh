@@ -5,7 +5,7 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 R="\e[31m"
 G="\e[32m"
 y="\e[33m"
-N=\e[0m"
+N="\e[0m"
 
 LOGFILE="/temp/$0-TIMESTAMP.log"
 
